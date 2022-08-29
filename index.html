@@ -8,11 +8,46 @@
     <title>IMC</title>
 </head>
 <body>
+    <header>
+       
+    </header>
     <div id="box">
-        <input type="text">
-        <input type="">
-        <button>Calc</button>
-        <button>Clear</button>
+        <div id="cardBox">
+            <div>
+            <form>
+            <label for="height">Height</label>
+            <input id= "height" min="0" class="inputbox" placeholder="0" type="number">
+            </span>    
+            </div> 
+            <div>
+            <label for="weight">Weight</label>
+            <input id= "weight" min="0" class="inputbox" placeholder="0" type="number">
+            </div>
+            </form>
+            <div>
+            <button id="calc">Calc</button>
+            <button id="clear" onclick="clear()">Clear</button>
+            </div>
+            <div>
+                <input id="resultField" type="text" value="" disabled>
+            </div>
+        </div>
     </div>
+    <script>
+        function imc(){
+            let height = document.getElementById("height").value;
+            let weight = document.getElementById("weight").value
+            let result = (height/(height*height));
+            if(height == 0|| weight == 0){
+
+            }
+            
+        }
+
+        function clear(){
+            let height= document.getElementById("height").value='';
+            let weight= document.getElementById("weight").value='';
+        }
+    </script>
 </body>
 </html>
