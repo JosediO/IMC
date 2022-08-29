@@ -13,21 +13,26 @@
     </header>
     <div id="box">
         <div id="cardBox">
-            <div>
+            
+                <!--<div id="lenguage">
+                    <button id="usa" onclick="lenguage()"> <image class="flag" src="assets/usa.png"></image></button>
+                    <button id="brazil" onclick="lenguage()"> <image class="flag" src="assets/brazil.png"></image></button>
+                </div>-->
+            <div>    
             <form>
             <label for="height">Height</label>
-            <input id= "height" min="0" class="inputbox" placeholder="0" type="number">
+            <input id= "height" min="0" class="inputbox" required placeholder="0" type="number">
             </span>    
             </div> 
             <div>
             <label for="weight">Weight</label>
-            <input id= "weight" min="0" class="inputbox" placeholder="0" type="number">
+            <input id= "weight" min="0" class="inputbox" required placeholder="0" type="number">
+            </div>
+            <div>
+            <button id="calc" type="submit" onclick="imc()">Calc</button>
+            <button id="clear" type="reset" >Clear</button>
             </div>
             </form>
-            <div>
-            <button id="calc" onclick="imc()">Calc</button>
-            <button id="clear" onclick="clear()">Clear</button>
-            </div>
             <div>
                 <input id="resultField" type="text" value="" disabled>
             </div>
@@ -56,14 +61,15 @@
                 document.getElementById("resultField").style.color="#b30000";
                 document.getElementById("resultField").value="Severe Obesity";
             }
-        }        
-        function clear(){
-             document.getElementById("height").value='';
-             document.getElementById("weight").value='';
-             document.getElementById("resultField").value='';
         }
+        function lenguage(){
+            if(document.getElementById("usa").style.display="none"){
+                document.getElementById("brazil").style.display="flex";
+            }else if(document.getElementById("brazil").style.display="none"){
+                document.getElementById("usa").style.display="flex";
+            }
+        }    
 
-        
     </script>
 </body>
 </html>
