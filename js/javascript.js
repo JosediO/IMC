@@ -20,9 +20,5 @@ function imc(){
     }
 }
 function lenguage(){
-    if(document.getElementById("usa").style.display="none"){
-        document.getElementById("brazil").style.display="flex";
-    }else if(document.getElementById("brazil").style.display="none"){
-        document.getElementById("usa").style.display="flex";
-    }
+    
 }
