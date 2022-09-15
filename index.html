@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>IMC</title>
 </head>
 <body>
@@ -13,34 +14,34 @@
     </header>
     <div id="box">
         <div id="cardBox">
-            
-                <div id="lenguage">
-                    <label id="flag"></label>
+                <!--<div id="lenguage">
                    <label class="switch">
                         <input type="checkbox" id="toggle">
+                        <span class="off">ENG</span>
+                        <span class="off">BRA</span>
                         <span class="slider round"></span>
                    </label>
+                </div>-->
+                <div>    
+                <form target="frame">
+                    <label for="height">Height</label>
+                    <input id= "height" min="0" class="inputbox" required placeholder="0" type="number">
+                </div> 
+                <div>
+                    <label for="weight">Weight</label>
+                        <input id= "weight" min="0" class="inputbox" required placeholder="0" type="number">
                 </div>
-            <div>    
-            <form>
-            <label for="height">Height</label>
-            <input id= "height" min="0" class="inputbox" required placeholder="0" type="number">
-            </span>    
-            </div> 
-            <div>
-            <label for="weight">Weight</label>
-            <input id= "weight" min="0" class="inputbox" required placeholder="0" type="number">
-            </div>
-            <div>
-            <button id="calc" type="submit" onclick="imc()">Calc</button>
-            <button id="clear" type="reset" >Clear</button>
-            </div>
+                <div>
+                    <button id="calc" type="submit" onclick="imc()">Calc</button>
+                    <button id="clear" type="reset" onclick="clear()" >Clear</button>
+                </div>
+                <div>
+                    <input id="resultField" type="text" value="" disabled>
+                </div>
             </form>
-            <div>
-                <input id="resultField" type="text" value="" disabled>
-            </div>
         </div>
     </div>
+    <iframe name="frame"></iframe>
     <script src="js/javascript.js"></script>
 </body>
 </html>

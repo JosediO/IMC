@@ -19,6 +19,7 @@ function imc(){
         document.getElementById("resultField").value="Severe Obesity";
     }
 }
+
 function lenguage(){
     
 }

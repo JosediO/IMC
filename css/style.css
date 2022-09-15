@@ -219,3 +219,7 @@ input:checked + .slider:before {
     text-align: center;
   
   }
+
+  iframe{
+    display: none;
+  }
