@@ -1,3 +1,10 @@
+function validate(){
+    if(!document.getElementById("height").value == null || !document.getElementById("weight").value == null){
+        imc();    
+    } else{
+        imc();   
+     }
+}
 function imc(){
     let height = document.getElementById("height").value;
     let weight = document.getElementById("weight").value;
@@ -18,8 +25,4 @@ function imc(){
         document.getElementById("resultField").style.color="#b30000";
         document.getElementById("resultField").value="Severe Obesity";
     }
-}
-
-function lenguage(){
-    
 }
