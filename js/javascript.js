@@ -1,8 +1,10 @@
 function validate(){
-    if(!document.getElementById("height").value == null || !document.getElementById("weight").value == null){
-        imc();    
+    if(!document.getElementById("height").value == ''){
+        if(!document.getElementById("weight").value ==''){
+            imc();
+        }
     } else{
-        imc();   
+           
      }
 }
 function imc(){

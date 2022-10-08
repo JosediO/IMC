@@ -29,8 +29,8 @@ input::-webkit-outer-spin-button,
 }
 
 #cardBox{
-    width: 400px;
-    height: 380px;
+    width: 22em;
+    height: 25em;
     border-radius: 15%;
     background-color: #fefefe;
     display: flex;
@@ -48,123 +48,11 @@ input::-webkit-outer-spin-button,
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 20px;
-    margin: 5px;
+    padding: 0px 10px;
+    margin: 3px;
     color: #001347;
+    text-align: center;
 }
-#lenguage{
-  display: flex;
-  align-items: flex-end;
-  justify-content: end;
-  width: 300px;
-}
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-/*
-.flag{
-  display: flex;
-  width: 15px;
-  height: 12px;
-  
-}
-
-#usa {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width:40px;
-  height:25px;
-  border-width:1px;
-  border-color:rgba(57, 85, 119, 1);
-  border-top-left-radius:28px;
-  border-top-right-radius:28px;
-  border-bottom-left-radius:28px;
-  border-bottom-right-radius:28px;
-  box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 1);
-  background:rgba(68, 73, 199, 1);
-}
-
-#usa:hover {
-  background: rgba(86, 90, 204, 1)
-}
-
-#brazil {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width:40px;
-    height:25px;
-    border-width:1px;
-    border-color:#056310;
-    border-top-left-radius:28px;
-    border-top-right-radius:28px;
-    border-bottom-left-radius:28px;
-    border-bottom-right-radius:28px;
-    box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 1);
-    background:#18ab29;
-  }
-  
-  #brazil:hover {
-    background: #5cbf2a
-  } */
-
 
 #calc{
     font-size:22px;
